@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kekespro</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/kekespro.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="./img/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="./img/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="./img/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="./img/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="./img/largetile.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.modal.js"></script>
+    <script src="./js/raideri.js"></script>
+  </head>
+  <body>
+  <div id="ex1" style="display:none;">
+  </div>
+    <header>
+      <h1><a href="/">KEKESPRO</a></h1>
+      <input type="text" id="search"/><span class="icon_clear"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAOCAYAAABHN77IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmhJREFUeNq81UtsTHEUx/E7NdUo9QoxTbxZsPJYIJZIRIKFEI+EiERTCbHCBgtbdiIkRREkJDIitIiGYEU9uhCPhfGM6kzoqDJFe31P8rvJyc3tWNU/+WTm/u+9/zn33HP+kwrDMMhms8EAj8mox1KM19wH3MQx5KIL08HAj004jOGx+TGYjW3YiUYfkH0ORkp+iY0hGI0ivscWHYSx6ENBn35swYl/BFyDk4qhIQroFkL8xDCcVyo3YAe6MEJzjbpnGXbpvkp8xmZ06/x0HHI//BATMU7HHXiDeTo+iHtRQBOwFq9QpWxksBcb8UjXpHT9IhzHVtxQFiehxwVQh1H6/gQLsARXtI4Ffx2tmKsHrosCsqf8gm9uwUrNt+v4vTu3W0/fpGN7lc9ir2Kx+z4D65T51ahAs5Iw098TBVSlbORRrdfyGBdwR3VwGp+UDeuUu2XqYqTrpqgOz6lOT2nOMn8mdl9thb704jna8BSdmj+A9ZiC+1iJks79KRNQmFDgP/TA0cgnNElf2i1+Ca8TFm+V5dinGrCAZ+kBkkZRa2V0bB24yopW+5F15xHtS5fVqTbelduHqlVHRVdTUdFa2vfrB3LutZSUnUA1stBlo02FfFRzJZVEhwuoKaWd+oVOdKntrYZacNaluRZ79OoC1ZwV6kvVoLXwdvdAlp0H6k4bb7Wf1bhGKGgXt/ER86OALMKhakerq6/quowW7NUPdyfstlPxW5nqjJ23vSqrgMuNHnXf1bRLaT7hwnbX9kmjIP2NZgXVgGn9XJPTftbyv/7LbmvjW4MVmKM3YdvKNVx0dRr8FWAA8xalV0+DTMIAAAAASUVORK5CYII=" alt="esc X" /></span>
+      <div id="ostoskoripainike"><a href="#ostoskori">Ostoskori</a></div>
+    </header>
+    <div class="columnsContainer">
+      <div class="leftColumn">
+        <div id="results"></div>
+      </div>
+      <div class="rightColumn" id="basket">
+        <h2>Ostoskori</h2><a name="ostoskori"></a>
+        <input type="button" value="Lähetä tilaus" id="sendorder"/>
+        <div id="basketcontents"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.mojova.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 3]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.mojova.com/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+  </body>
+</html>
