@@ -1,0 +1,282 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+body { 
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #444;
+}
+a, a:active, a:visited {
+  color: #8a8a8a;
+  text-decoration: none;
+}
+#ex1 {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: #fff;
+  padding: 5px;
+}
+#ex1 p {
+  color: #000;
+}
+span.icon_clear {
+  position: absolute;
+  top: 43px;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+  font: 1em sans-serif;
+  color: #ccc;
+}
+
+/* hakufilter */
+span.icon_clear:hover {
+  color: #000;
+}
+
+#basketcontents {
+  line-height: 1.35em;
+  font-weight: 300;
+  b {
+    display: block;
+    margin-top: 10px;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0.99;
+}
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2em;
+}
+h1 {
+  padding: 30px;
+  display: none;
+}
+h2 {
+  padding: 30px 0px 30px 0px;
+  display: inline-block;
+}
+b {
+  font-weight: 600;
+}
+mark {
+  color: #333;
+  background-color: #ffdd33;
+}
+label {
+  display: block;
+  font-weight: 300;
+}
+input {
+  width: 230px;
+}
+input[type="text"] {
+  display: inline-block;
+  outline: none;
+  height: 40px;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 1em;
+  color: #8a8a8a;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  &::before {
+    content: "x";
+    color: red;
+  }
+  &:focus {
+    background-color: #fafcff;
+    border: 1px solid #88aaee;
+  }
+  &.invalid + .required {
+    display: inline-block;
+  }
+}
+
+.required {
+  display: none;
+  color: red;
+  margin-left: 3px;
+}
+
+input[type="button"] {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  height: 3em;
+  margin: 5px 0;
+  font-weight: 100;
+  font-size: 1em;
+  background-color: #C4E8FF;
+  border: 1px solid #8CC2E5;
+  color: #444;
+  &:hover:not(:disabled) {
+    color: #000;
+    background-color: #AFE0FF;
+  }
+  &:disabled {
+    cursor: default;
+    color: #ccc;
+    border: 1px solid #ccc;
+    background: #eee;
+  }
+}
+.columnsContainer { 
+  position: relative; 
+  margin: 7em .5em .5em .5em; 
+}
+.leftColumn, .rightColumn {  
+  padding: .25em; 
+}
+.leftColumn { 
+  margin-bottom: .5em; 
+  border-right: 1px solid #ccc;
+}
+ul {
+  padding: 0;
+}
+.list li {
+  border-bottom: 1px solid #ccc;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+.li-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 40%;
+ img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    padding: 20px;
+  }
+}
+.li-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 60%;
+  min-height: 6em;
+}
+.li-head {
+  margin: 0px 0px 10px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.li-sub {
+  margin: 0;
+  font-weight: 300;
+}
+#ostoskoripainike {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+.productresult {
+  cursor: pointer;
+  min-height: 18em;
+}
+span.reduce img {
+  cursor: pointer;
+  width: 10px;
+  float: right;
+  margin-right: 20px;
+}
+.h1end {
+  display: none;
+}
+@media all and (min-width: 40em) {
+  body {
+    color: #666;
+    font-weight: 200;
+  }
+  h1 {
+    display: none;	
+  }
+  header, .leftColumn { 
+    margin-right: 15.75em; 
+  }
+  .rightColumn { 
+    position: fixed;
+    width: 150px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    width: 15em; 
+  }	
+  .list {
+    padding: 0.5em;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .list li {
+    padding: 0.5em;
+    display: block;
+    width: 50%;
+    float: left;
+    background: none;
+    border: 0;
+  }
+  .li-img, .li-text {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  .li-text {
+    padding: 0.5em 0;
+  }
+  #ostoskoripainike {
+    display: none;
+  }
+  .h1end {
+    display: block;
+  } 
+}
+@media all and (min-width: 50em) {
+  h1 {
+    display: inline-block;	
+  }
+  .list li {
+    width: 33%;
+  }
+  .leftColumn { 
+    margin-right: 19.5em; 
+  }
+  .rightColumn { 
+    width: 18.75em; 
+  }
+}
+@media all and (min-width: 60em) {
+  .list li {
+    width: 20%;
+  }
+}
+@media all and (min-width: 100em) {
+  .list li {
+    width: 12.5%;
+  }
+  .leftColumn { 
+    margin-right: 22.75em; 
+  }
+  .rightColumn { 
+    width: 22em; 
+  }
+}
+
