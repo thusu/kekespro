@@ -26,6 +26,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.modal.js"></script>
+    <script src="./js/jquery.bitly.js"></script>
     <script src="./js/raideri.js"></script>
   </head>
   <body>
@@ -47,13 +48,17 @@
         <h2>Ostoskori</h2>
         <a name="ostoskori"></a>
         <label>Nimi</label>
-        <input type="text"  id="name" class="invalid" required/>
+          <input type="text"  id="name" class="invalid" required/>
           <div class="required">&#10005;</div>
         <label>Asiakas</label>
-        <input type="text" id="client" class="invalid" required />
+          <input type="text" id="client" class="invalid" required />
+          <div class="required">&#10005;</div>
+        <label>Osoite</label>
+          <input type="text" id="address" class="invalid" required />
           <div class="required">&#10005;</div>
         <input type="button" value="Lähetä tilaus" id="sendorder" disabled/>
-        <input type="button" value="Luo URL" id="createURL" />
+        <div class="urlToBasket"></div>
+        <div class="emptyBasket"><a>Tyhjennä</a></div>
         <div id="basketcontents"></div>
       </div>
 
