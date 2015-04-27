@@ -15,17 +15,11 @@ $(document).keyup(function(e) {
   }
 })
 
-$(document).on('click', '.icon_clear', function() {
-  $(this).delay(300).fadeTo(300, 0)
-    .prev('input').val('')
-  $('#search').focus().trigger('keyup')
-})
-
-
 $(window).load(function() {
-  $("input[id='search']", document.forms[0]).focus()
-
   addItemsFromUrl()
+  validateInputFields()
+
+  $("input[id='search']").focus()
 
   function addItemsFromUrl() {
     var kplArray = getQueryVariable('kpl')
@@ -94,27 +88,44 @@ $(window).load(function() {
     })
   })
 
+  $('.icon_clear').click(function() {
+    $(this).delay(300).fadeTo(300, 0)
+      .prev('input').val('')
+    $('#search').focus().trigger('keyup')
+  })
+
   $('#results').on('click', '.productresult', function(e) {
     var ean = $(this).attr("id")
     $(this).fadeIn(50).fadeOut(50).fadeIn(50)
     addToBasket(ean)
   })
 
-  $('.rightColumn').keyup(function(e) {
-    $('input[type=text]').each(function () {
+  $('.rightColumn input[type=text]').each(function() {
+    $(this).keyup(function() {
+      createUrlToBasket()
+      validateInputFields()
+    })
+  })
+
+  function validateInputFields() {
+      console.log("validate input fields")
+    $('.rightColumn input[type=text]').each(function() {
       if ($(this).val() == '')
         $(this).addClass('invalid')
-      else {
+      else
         $(this).removeClass('invalid')
-        createUrlToBasket()
-      }
     })
+    checkIfCanBeSent()
+  }
 
+  function checkIfCanBeSent() {
     if ($('.rightColumn .invalid').length == 0)
       $('input:button#sendorder').removeAttr('disabled')
     else
       $('input:button#sendorder').attr('disabled', 'disabled')
-  })
+
+    console.log($('.rightColumn .invalid').length == 0, basket.items.length > 0)
+  }
 
   function addToBasket(eanToAdd) {
     $.getJSON('products.json', function (data) {
@@ -205,7 +216,7 @@ $(window).load(function() {
     var email = 'kespro.myynti@kesko.fi'
     var cc = 'ostot@reaktor.fi'
     var subject = 'Tilaus, Reaktor, '+$('#client').val()+', '+$('#name').val()
-    var body = 'Hei, tässä tämänkertainen tilaus osoitteeseen <INSERT OSOITE HERE>.\n\n Tilauksen vastaanottamisessa auttavat <INSERT HENKILÖT HERE>. \n\nTilauksen sisältö: \n\n'
+    var body = 'Hei, tässä tämänkertainen tilaus osoitteeseen ' + $('#address').val() + '.\n\n Tilauksen vastaanottamisessa auttavat <INSERT HENKILÖT HERE>. \n\nTilauksen sisältö: \n\n'
     var basketitems = ''
 
     for (var i = 0; i < basket.items.length; i++) {
