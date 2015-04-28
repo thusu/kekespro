@@ -63,10 +63,11 @@ $(window).load(function() {
     var count = 0
     $.getJSON('products.json', function(data) {
       $.each(data, function(key, val) {
-        if ((val.nimike.search(regex) != -1) || (val.kuvaus.search(regex) != -1)) {
+        if ((val.nimike.search(regex) != -1) || (val.kuvaus.search(regex) != -1) || (val.hakusanat.search(regex) != -1)) {
           hiliteterm = searchField.replace(/(\s+)/, "(<[^>]+>)*$1(<[^>]+>)*")
           var pattern = new RegExp("(" + hiliteterm + ")", "gi")
           output += '<li class="productresult" id="' + val.ean + '">'
+          output += '<div class="overlay"></div>'
           output += '<div class="li-img"><img class="productimage" src="./img/' + val.ean + '.jpg" alt="' + val.nimike + '" /></div>'
           output += '<div class="li-text"><h4 class="li-head nimike" data-value="' + val.nimike + '">' + val.nimike.replace(pattern, "<mark>$1</mark>") + '</h4>'
           output += '<p class="li-sub kuvaus" data-value="' + val.kuvaus + '">' + val.kuvaus.replace(pattern, "<mark>$1</mark>") + '</p>'
@@ -96,7 +97,7 @@ $(window).load(function() {
 
   $('#results').on('click', '.productresult', function(e) {
     var ean = $(this).attr("id")
-    $(this).fadeIn(50).fadeOut(50).fadeIn(50)
+    $(this).fadeIn(50).fadeOut(50).fadeIn(200)
     addToBasket(ean)
   })
 
@@ -108,7 +109,6 @@ $(window).load(function() {
   })
 
   function validateInputFields() {
-      console.log("validate input fields")
     $('.rightColumn input[type=text]').each(function() {
       if ($(this).val() == '')
         $(this).addClass('invalid')
@@ -123,8 +123,6 @@ $(window).load(function() {
       $('input:button#sendorder').removeAttr('disabled')
     else
       $('input:button#sendorder').attr('disabled', 'disabled')
-
-    console.log($('.rightColumn .invalid').length == 0, basket.items.length > 0)
   }
 
   function addToBasket(eanToAdd) {
@@ -181,7 +179,7 @@ $(window).load(function() {
     $('.urlToBasket').html("<a href="+newUrl+">Linkki koriin</a>")
   }
 
-  $('#basket').on('click', '.reduce', function(e) {
+  $('#basket').on('click', '.reduce', function() {
     var id = $(this).attr("data-ean-remove")
     for (var i = 0; i < basket.items.length; i++) {
       if (basket.items[i].ean == id) {
@@ -189,7 +187,9 @@ $(window).load(function() {
           basket.items.splice(i, 1)
         } else {
           basket.items[i].kpl--
-          $(this).prev().fadeIn(50).fadeOut(100).fadeIn(100)
+          var itemAmount = $(this).parent().parent().find('b')
+          console.log(itemAmount)
+          itemAmount.fadeOut(100).fadeIn(100)
           reduced = true
         }
       }
@@ -201,7 +201,9 @@ $(window).load(function() {
   function updateBasketHtml() {
     $('#basket #basketcontents').html('')
     $.each(basket.items, function(index, value) {
-      $('#basket #basketcontents').append("<b>" + value.kpl + " kpl " + "</b>" + value.nimike + "<br/>" + value.kuvaus + " <span class=\"reduce\" data-ean-remove='" + value.ean + "'><img src=\"img/x.png\" /></span>")
+      $('#basket #basketcontents')
+        .append("<div class='itemRow'><b>" + value.kpl + " kpl " + "</b>" + value.nimike + "<br/>" + value.kuvaus + " <span class=\"reduce\" data-ean-remove='" + value.ean + "'>" +
+        "<img src=\"img/x.png\" /></span></div>")
     })
     createUrlToBasket()
   }
@@ -215,8 +217,8 @@ $(window).load(function() {
   $('#sendorder').click(function(e) {
     var email = 'kespro.myynti@kesko.fi'
     var cc = 'ostot@reaktor.fi'
-    var subject = 'Tilaus, Reaktor, '+$('#client').val()+', '+$('#name').val()
-    var body = 'Hei, tässä tämänkertainen tilaus osoitteeseen ' + $('#address').val() + '.\n\n Tilauksen vastaanottamisessa auttavat <INSERT HENKILÖT HERE>. \n\nTilauksen sisältö: \n\n'
+    var subject = 'Tilaus: Reaktor, '+ $('#client').val() +', '+ $('#name').val()
+    var body = 'Hei, tässä tämänkertainen tilaus asiakkuuteen '+ $('#client').val() +' osoitteeseen ' + $('#address').val() + '.\n\n Tilauksen vastaanottamisessa auttavat <INSERT HENKILÖT HERE>. \n\nTilauksen sisältö: \n\n'
     var basketitems = ''
 
     for (var i = 0; i < basket.items.length; i++) {

@@ -1,42 +1,42 @@
-/* line 4, kekespro.scss */
+/* line 5, kekespro.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 7, kekespro.scss */
-body {
-  margin: 0;
+  box-sizing: border-box;
+  font-weight: 300;
   font-family: 'Lato', sans-serif;
   font-size: 0.9em;
-  font-weight: 300;
-  color: #444; }
+  color: #444;
+  line-height: 1.2; }
 
-/* line 15, kekespro.scss */
+/* line 12, kekespro.scss */
+body {
+  margin: 0; }
+
+/* line 17, kekespro.scss */
 a {
-  font-size: 16px;
-  font-weight: 400;
   color: #3190ED;
-  text-decoration: none; }
-  /* line 20, kekespro.scss */
+  text-decoration: none;
+  font-weight: 400; }
+  /* line 21, kekespro.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 24, kekespro.scss */
+/* line 25, kekespro.scss */
 #ex1 {
   min-width: 400px;
   min-height: 400px;
   background-color: #fff;
   padding: 5px; }
 
-/* line 30, kekespro.scss */
+/* line 31, kekespro.scss */
 #ex1 p {
   color: #000; }
 
-/* line 33, kekespro.scss */
+/* line 34, kekespro.scss */
 span.icon_clear {
   position: absolute;
-  top: 43px;
+  top: 48px;
   right: 10px;
   display: none;
   cursor: pointer;
@@ -44,32 +44,32 @@ span.icon_clear {
   color: #ccc; }
 
 /* hakufilter */
-/* line 44, kekespro.scss */
+/* line 45, kekespro.scss */
 span.icon_clear:hover {
-  color: #000; }
+  color: black; }
 
-/* line 48, kekespro.scss */
+/* line 49, kekespro.scss */
 .urlToBasket {
   float: left;
   margin: 10px 0; }
 
-/* line 52, kekespro.scss */
+/* line 53, kekespro.scss */
 .emptyBasket {
   float: right;
   margin: 10px;
   display: none; }
 
-/* line 57, kekespro.scss */
+/* line 58, kekespro.scss */
 #basketcontents {
   clear: both;
   line-height: 1.35em;
   font-weight: 300; }
-  /* line 61, kekespro.scss */
+  /* line 62, kekespro.scss */
   #basketcontents b {
     display: block;
     margin-top: 10px; }
 
-/* line 66, kekespro.scss */
+/* line 67, kekespro.scss */
 header {
   position: fixed;
   top: 0;
@@ -78,155 +78,158 @@ header {
   z-index: 1;
   opacity: 0.99; }
 
-/* line 74, kekespro.scss */
+/* line 75, kekespro.scss */
 h1, h2 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 2em; }
-  /* line 78, kekespro.scss */
+  /* line 79, kekespro.scss */
   h1 a, h2 a {
     color: inherit;
     text-transform: inherit;
     font-weight: inherit;
     font-size: inherit; }
 
-/* line 85, kekespro.scss */
+/* line 86, kekespro.scss */
 h1 {
   padding: 30px;
   display: none; }
 
-/* line 89, kekespro.scss */
+/* line 90, kekespro.scss */
 h2 {
   padding: 30px 0px 30px 0px;
   display: inline-block; }
 
-/* line 93, kekespro.scss */
+/* line 94, kekespro.scss */
 b {
   font-weight: 600; }
 
-/* line 96, kekespro.scss */
+/* line 97, kekespro.scss */
 mark {
   color: #444;
+  font-weight: 400;
   background-color: #ffdd33; }
 
-/* line 100, kekespro.scss */
+/* line 102, kekespro.scss */
 label {
+  margin-top: 5px;
   display: block;
   font-weight: 300; }
 
-/* line 104, kekespro.scss */
+/* line 107, kekespro.scss */
 input {
   width: 200px; }
 
-/* line 107, kekespro.scss */
+/* line 110, kekespro.scss */
 input[type="text"] {
   display: inline-block;
   outline: none;
   height: 40px;
   padding: 10px;
-  font-weight: 100;
   font-size: 1em;
   color: #444;
   border: 1px solid #ccc;
   margin: 5px 0; }
-  /* line 117, kekespro.scss */
+  /* line 119, kekespro.scss */
   input[type="text"]::before {
     content: "x";
     color: red; }
-  /* line 121, kekespro.scss */
+  /* line 123, kekespro.scss */
   input[type="text"]:focus {
     background-color: #fafcff;
     border: 1px solid #88aaee; }
-  /* line 125, kekespro.scss */
+  /* line 127, kekespro.scss */
   input[type="text"].invalid + .required {
     display: inline-block; }
 
-/* line 130, kekespro.scss */
+/* line 132, kekespro.scss */
 .required {
   display: none;
   color: red;
   margin-left: 3px; }
 
-/* line 136, kekespro.scss */
+/* line 138, kekespro.scss */
 input[type="button"] {
-  display: inline-block;
+  display: block;
   outline: none;
   cursor: pointer;
   height: 3em;
   margin: 5px 0;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1em;
   background-color: #C4E8FF;
   border: 1px solid #8CC2E5;
   color: #444; }
-  /* line 147, kekespro.scss */
+  /* line 149, kekespro.scss */
   input[type="button"]:hover:not(:disabled) {
     color: #000;
     background-color: #AFE0FF; }
-  /* line 151, kekespro.scss */
+  /* line 153, kekespro.scss */
   input[type="button"]:disabled {
     cursor: default;
     color: #ccc;
     border: 1px solid #ccc;
     background: #eee; }
 
-/* line 158, kekespro.scss */
+/* line 160, kekespro.scss */
 .columnsContainer {
   position: relative;
   margin: 7em .5em .5em .5em; }
 
-/* line 162, kekespro.scss */
+/* line 164, kekespro.scss */
 .leftColumn, .rightColumn {
   padding: .25em; }
 
-/* line 165, kekespro.scss */
+/* line 167, kekespro.scss */
 .leftColumn {
   margin-bottom: .5em; }
 
-/* line 168, kekespro.scss */
+/* line 170, kekespro.scss */
+.rightColumn {
+  background: #eee9e5; }
+
+/* line 173, kekespro.scss */
 ul {
   padding: 0; }
 
-/* line 171, kekespro.scss */
+/* line 176, kekespro.scss */
 .list li {
   border-bottom: 1px solid #ccc;
   display: table;
   border-collapse: collapse;
   width: 100%; }
 
-/* line 177, kekespro.scss */
+/* line 182, kekespro.scss */
 .li-img {
   display: table-cell;
   vertical-align: middle;
   width: 40%; }
-  /* line 181, kekespro.scss */
+  /* line 186, kekespro.scss */
   .li-img img {
     display: block;
     width: 100%;
     height: auto;
     padding: 20px; }
 
-/* line 188, kekespro.scss */
+/* line 193, kekespro.scss */
 .li-text {
   display: table-cell;
   vertical-align: middle;
   width: 60%;
+  padding: .5em;
   min-height: 6em; }
 
-/* line 194, kekespro.scss */
+/* line 200, kekespro.scss */
 .li-head {
   margin: 0px 0px 10px 0px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
-  text-transform: capitalize; }
-
-/* line 201, kekespro.scss */
-.li-sub {
-  margin: 0;
-  font-weight: 300; }
+  text-transform: capitalize;
+  font-weight: 400; }
 
 /* line 205, kekespro.scss */
+.li-sub {
+  margin: 0; }
+
+/* line 208, kekespro.scss */
 #ostoskoripainike {
   display: block;
   position: fixed;
@@ -237,41 +240,50 @@ ul {
   background-color: white;
   text-transform: uppercase; }
 
-/* line 215, kekespro.scss */
+/* line 218, kekespro.scss */
 .productresult {
+  position: relative;
   cursor: pointer;
   min-height: 18em; }
-  /* line 218, kekespro.scss */
-  .productresult:hover {
-    border: 3px solid #ddd;
-    border-radius: 5px; }
+  /* line 223, kekespro.scss */
+  .productresult:hover .overlay {
+    border: 10px solid #420;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #D5C8BD;
+    opacity: .1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
-/* line 223, kekespro.scss */
+/* line 238, kekespro.scss */
 span.reduce img {
   cursor: pointer;
   width: 10px;
   float: right;
   margin-right: 20px; }
 
-/* line 229, kekespro.scss */
+/* line 244, kekespro.scss */
 .h1end {
   display: none; }
 
 @media all and (min-width: 40em) {
-  /* line 233, kekespro.scss */
+  /* line 248, kekespro.scss */
   body {
     color: #444;
     font-weight: 200; }
 
-  /* line 237, kekespro.scss */
+  /* line 252, kekespro.scss */
   h1 {
     display: none; }
 
-  /* line 240, kekespro.scss */
+  /* line 255, kekespro.scss */
   header, .leftColumn {
     margin-right: 16em; }
 
-  /* line 243, kekespro.scss */
+  /* line 258, kekespro.scss */
   .rightColumn {
     position: fixed;
     width: 150px;
@@ -280,16 +292,16 @@ span.reduce img {
     bottom: 0;
     right: 0;
     width: 17em;
-    background: #eee;
+    background: #eee9e5;
     padding-left: 1em; }
 
-  /* line 254, kekespro.scss */
+  /* line 269, kekespro.scss */
   .list {
     padding: 0.5em;
     margin: 0 auto;
     overflow: hidden; }
 
-  /* line 259, kekespro.scss */
+  /* line 274, kekespro.scss */
   .list li {
     padding: 0.5em;
     display: block;
@@ -299,61 +311,64 @@ span.reduce img {
     border: 0;
     border: 3px solid white; }
 
-  /* line 268, kekespro.scss */
+  /* line 283, kekespro.scss */
   .li-img, .li-text {
     display: block;
     width: auto;
     padding: 0; }
 
-  /* line 273, kekespro.scss */
+  /* line 288, kekespro.scss */
   .li-text {
-    padding: 0.5em 0; }
+    padding: 0.5em; }
 
-  /* line 276, kekespro.scss */
+  /* line 291, kekespro.scss */
   #ostoskoripainike {
     display: none; }
 
-  /* line 279, kekespro.scss */
+  /* line 294, kekespro.scss */
   .h1end {
     display: block; } }
 @media all and (min-width: 50em) {
-  /* line 284, kekespro.scss */
+  /* line 299, kekespro.scss */
   h1 {
     display: inline-block; }
 
-  /* line 287, kekespro.scss */
+  /* line 302, kekespro.scss */
   .list li {
     width: 33%; }
 
-  /* line 290, kekespro.scss */
+  /* line 305, kekespro.scss */
   .leftColumn {
     margin-right: 19.5em; }
 
-  /* line 293, kekespro.scss */
+  /* line 308, kekespro.scss */
   .rightColumn {
     width: 20em;
-    background: #eee;
     padding-left: 1.5em; }
 
-  /* line 298, kekespro.scss */
+  /* line 312, kekespro.scss */
+  .rightColumn {
+    background: #eee9e5; }
+
+  /* line 315, kekespro.scss */
   input {
     width: 230px; } }
 @media all and (min-width: 60em) {
-  /* line 303, kekespro.scss */
+  /* line 320, kekespro.scss */
   .list li {
     width: 20%;
     border: 3px solid white;
     border-radius: 5px; } }
 @media all and (min-width: 100em) {
-  /* line 310, kekespro.scss */
+  /* line 327, kekespro.scss */
   .list li {
     width: 12.5%; }
 
-  /* line 313, kekespro.scss */
+  /* line 330, kekespro.scss */
   .leftColumn {
     margin-right: 22.75em; }
 
-  /* line 316, kekespro.scss */
+  /* line 333, kekespro.scss */
   .rightColumn {
     width: 22em; } }
 

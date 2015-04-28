@@ -1,1110 +1,1332 @@
 [  
-  {  
+  { 
+    "hakusanat": "",
     "nimike":"Froosh mansikka-banaani-guava",
     "ean":"7350020720697",
     "kuvaus":"24 x purkki 150 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Froosh mango-appelsiini",
     "ean":"7350020720758",
     "kuvaus":"24 x purkki 150 ml"
   },
-  {  
+  {
+    "hakusanat": "",
     "nimike":"Froosh mango-appelsiini",
     "ean":"7350020720819",
     "kuvaus":"12 x pullo 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Froosh mustikka-vadelma",
     "ean":"7350020720833",
     "kuvaus":"12 x pullo 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Froosh ananas-banaani-kookos",
     "ean":"7350020720857",
     "kuvaus":"12 x pullo 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Froosh appelsiini-porkkana-inkivääri",
     "ean":"7350020720895",
     "kuvaus":"12 x pullo 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Froosh mansikka-banaani-guava",
     "ean":"7350020720918",
     "kuvaus":"12 x pullo 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Hartwall Vichy Original",
     "ean":"6413605000841",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Bonaqua Regular",
     "ean":"6415600519618",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Pepsi Max",
     "ean":"6413605015555",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Coca-Cola",
     "ean":"5449000000965",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Coca-Cola Light",
     "ean":"5449000050090",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Coca-Cola Zero",
     "ean":"5449000131812",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Battery ",
     "ean":"6415600025300",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Red Bull ",
     "ean":"9002490100773",
     "kuvaus":"24 x tölkki 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Red Bull sokeriton",
     "ean":"9002490200602",
     "kuvaus":"24 x tölkki 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Fanta Appelsiini",
     "ean":"5449000056689",
     "kuvaus":"24 x tölkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Hartwall Vichy Original",
     "ean":"6413600000860",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Bonaqua",
     "ean":"6415600502542",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Pepsi Max",
     "ean":"6413600013082",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Coca-Cola ",
     "ean":"6415600501781",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Coca-Cola Light",
     "ean":"6415600501927",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Coca-Cola Zero",
     "ean":"6415600502054",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Fanta Appelsiini",
     "ean":"6415600502153",
     "kuvaus":"24 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Tropicana Cloudy Apple",
     "ean":"5410188024821",
     "kuvaus":"8 x pullo 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Tropicana Appelsiini",
     "ean":"5410188030020",
     "kuvaus":"8 x pullo 250 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Tropicana Cloudy Apple",
     "ean":"5410188030044",
     "kuvaus":"8 x pullo 250 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch appelsiini (reilu kauppa)",
     "ean":"90020131",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch mansikka",
     "ean":"90020940",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch mustikka",
     "ean":"9008700132718",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch luomu-omena",
     "ean":"9008700133401",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch mango",
     "ean":"90087172",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch luomu-aprikoosi",
     "ean":"90169021",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch luomu-mustaherukka",
     "ean":"90169045",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch appelsiini",
     "ean":"90169168",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch karpalo",
     "ean":"90169199",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Rauch ananas",
     "ean":"90169502",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch tomaatti",
     "ean":"90169519",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "mehu",
     "nimike":"Rauch omena",
     "ean":"90169762",
     "kuvaus":"24 x pullo 200 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Vitamin Well Defence",
     "ean":"7350042710010",
     "kuvaus":"12 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Vitamin Well Care",
     "ean":"7350042710119",
     "kuvaus":"12 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Vitamin Well Everyday",
     "ean":"7350042710218",
     "kuvaus":"12 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Vitamin Well Reload",
     "ean":"7350042710515",
     "kuvaus":"12 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Vitamin Well Antioxidant",
     "ean":"7350042710614",
     "kuvaus":"12 x pullo 500 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Vitamin Well Drive",
     "ean":"7350042710812",
     "kuvaus":"12 x pullo 500 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Elovena Aurinkoinen",
     "ean":"6411200102779",
     "kuvaus":"10 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Elovena Samettinen suklaa",
     "ean":"6411200106142",
     "kuvaus":"10 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Elovena Hedelmäpirtelö",
     "ean":"6411200108252",
     "kuvaus":"10 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Elovena Metsämarja",
     "ean":"6411200101109",
     "kuvaus":"10 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Elovena Hedelmäinen",
     "ean":"6411200104865",
     "kuvaus":"10 x purkki 200 ml"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti, välipalajuoma",
     "nimike":"Valio Gefilus mansikka-mustikka",
     "ean":"6408430026029",
     "kuvaus":"32 x purkki 100 ml"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti, välipalajuoma",
     "nimike":"Valio Gefilus kausimaku",
     "ean":"6408430028221",
     "kuvaus":"32 x purkki 100 ml"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti, välipalajuoma",
     "nimike":"Valio Gefilus mango-appelsiini-omena",
     "ean":"6408430028238",
     "kuvaus":"32 x purkki 100 ml"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti",
     "nimike":"Valio Gefilus puolukka",
     "ean":"6408430028276",
     "kuvaus":"32 x purkki 100 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Protein Drink vanilja",
     "ean":"7310861009405",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Protein Drink päärynä",
     "ean":"7310861009412",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Protein Drink mansikka",
     "ean":"7310861009429",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Recovery mansikka",
     "ean":"7310861009511",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Recovery vanilja",
     "ean":"7310861009528",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Recovery suklaa",
     "ean":"7310861009535",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Recovery mustikka",
     "ean":"7310861012719",
     "kuvaus":"18 x purkki 250 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Recovery vanilja",
     "ean":"7310861040705",
     "kuvaus":"18 x purkki 330 ml"
   },
   {  
+    "hakusanat": "välipalajuoma",
     "nimike":"Gainomax Recovery suklaa",
     "ean":"7310861040712",
     "kuvaus":"18 x purkki 330 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Rasvaton maito UHT",
     "ean":"6410405084859",
     "kuvaus":"8 x tölkki 1000 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Kevytmaito UHT",
     "ean":"6410405084873",
     "kuvaus":"8 x tölkki 1000 ml"
   },
   {  
+    "hakusanat": "",
     "nimike":"Täysmaito UHT",
     "ean":"6410405092007",
     "kuvaus":"8 x tölkki 1000 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Doubleshot Espresso & Milk",
     "ean":"5730800623066",
     "kuvaus":"12 x tölkki 200 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Skinny Cappuccino",
     "ean":"5711953005879",
     "kuvaus":"10 x purkki 220 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Cappuccino",
     "ean":"5711953023996",
     "kuvaus":"10 x purkki 220 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Chocolate Mocha",
     "ean":"5760466961073",
     "kuvaus":"10 x purkki 220 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Seattle Latte",
     "ean":"5760466961110",
     "kuvaus":"10 x purkki 220 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Frappuccino Vanilla",
     "ean":"5760466976305",
     "kuvaus":"8 x pullo 250 ml"
   },
   {  
+    "hakusanat": "kahvi",
     "nimike":"Starbucks Frappuccino Coffee",
     "ean":"5760466976435",
     "kuvaus":"8 x pullo 250 ml"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr mansikka",
     "ean":"5690527964104",
     "kuvaus":"6 x purkki 500 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr vanilja",
     "ean":"5690527965002",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr vanilja",
     "ean":"5690527965101",
     "kuvaus":"6 x purkki 500 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr mustikka",
     "ean":"5690527966009",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr meloni-passionhedelmä",
     "ean":"5690527968003",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr banaani",
     "ean":"5690527973007",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr kuningatar",
     "ean":"5690527974004",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr uuniomena",
     "ean":"5690527975001",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr uuniomena",
     "ean":"5690527975100",
     "kuvaus":"6 x purkki 500 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr mansikka",
     "ean":"5690527976008",
     "kuvaus":"6 x purkki 170 g"
   },
-  {  
+  {
+    "hakusanat": "rahka",
     "nimike":"Skyr veriappelsiini",
     "ean":"5690527977005",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr ananas",
     "ean":"5690527979504",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr mustaherukka-banaani",
     "ean":"5690527982009",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr puolukka-omena",
     "ean":"5690527987004",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Skyr mango",
     "ean":"5690527990004",
     "kuvaus":"6 x purkki 170 g"
   },
   {  
+    "hakusanat": "välipala, liha",
     "nimike":"Jack Link's Beef Jerky Original",
     "ean":"4047751730219",
     "kuvaus":"12 x annospussi 25 g"
   },
   {  
+    "hakusanat": "välipala, liha",
     "nimike":"Jack Link's Beef Jerky Sweet & Hot",
     "ean":"4047751730257",
     "kuvaus":"12 x annospussi 25 g"
   },
   {  
+    "hakusanat": "välipala, liha",
     "nimike":"Jack Link's Beef Jerky Sweet & Hot strip",
     "ean":"4047751731919",
     "kuvaus":"48 x annospussi 25 g"
   },
   {  
+    "hakusanat": "välipala, liha",
     "nimike":"Jack Link's Beef Jerky Peppered",
     "ean":"4047751732527",
     "kuvaus":"12 x pussi 75 g"
   },
   {  
+    "hakusanat": "välipala, liha",
     "nimike":"Jack Link's Beef Jerky Teriyaki",
     "ean":"4047751732534",
     "kuvaus":"12 x pussi 75 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Jack Link's Beef Snack Original",
     "ean":"9421013444376",
     "kuvaus":"12 x annospussi 25 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Jack Link's Beef Snack Peppered",
     "ean":"9421013444383",
     "kuvaus":"12 x annospussi 25 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Hasselpähkinä",
     "ean":"6410405133991",
     "kuvaus":"1 x pussi 500 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Cashew-pähkinä",
     "ean":"6410405111852",
     "kuvaus":"1 x pussi 1000 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Saksanpähkinä",
     "ean":"6410405134059",
     "kuvaus":"1 x pussi 500 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Pekaanipähkinä",
     "ean":"6410405111791",
     "kuvaus":"1 x pussi 700 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Hedelmäinen pähkinäsekoitus",
     "ean":"6410405113207",
     "kuvaus":"6 x rasia 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Kahvi",
     "ean":"6410405103918",
     "kuvaus":"12 x paketti 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Robert Paulig sj",
     "ean":"6411300166381",
     "kuvaus":"12 x paketti 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Saludo pj",
     "ean":"6420101443423",
     "kuvaus":"10 x paketti 450 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Löfbergs Lila juhlasekoitus sj",
     "ean":"7310050001302",
     "kuvaus":"12 x paketti 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Löfbergs Lila keskipaahto sj",
     "ean":"7310050001531",
     "kuvaus":"12 x paketti 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Arvid Nordquist highland nature",
     "ean":"7310760040158",
     "kuvaus":"6 x paketti 1000 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Jacobs Cafe Krönung sj",
     "ean":"4000508085314",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Kaffa Roastery Go morron",
     "ean":"6430040250877",
     "kuvaus":"6 x paketti 250 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Kaffa Roastery Monsoon Malaba",
     "ean":"6430040250990",
     "kuvaus":"6 x paketti 200 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Kaffa Roastery Voima",
     "ean":"6430040256541",
     "kuvaus":"6 x paketti 250 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Kaffa Roastery voima sj",
     "ean":"6430040256749",
     "kuvaus":"17 x pussi 300 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Löfbergs Lila Crescendo",
     "ean":"7310050001265",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Löfbergs Lila Kharisma",
     "ean":"7310050001692",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Löfbergs Lila Magnifika sj",
     "ean":"7310050001753",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Zoegas intenzo",
     "ean":"7310730000502",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Arvid Selection Eco reilu luomu",
     "ean":"7310760012438",
     "kuvaus":"12 x paketti 450 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Arvid Selection Reko reilu luomu",
     "ean":"7310760012445",
     "kuvaus":"12 x paketti 450 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Arvid Selection Colombia",
     "ean":"7310760012452",
     "kuvaus":"12 x paketti 450 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Classic sj mellanrost",
     "ean":"7310760012896",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Classic sj franskrost",
     "ean":"7310760012902",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Kaffa Roastery Espresso 30/70 papu",
     "ean":"6430040250297",
     "kuvaus":"5 x pussi 1000 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Arvid Nordq DivinoEspresso papu",
     "ean":"7310760040332",
     "kuvaus":"6 x pussi 1000 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Arvid Nordq Classic Nero espresso papu",
     "ean":"7310760040691",
     "kuvaus":"12 x pussi 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Lavazza Tierra papu",
     "ean":"8000070015340",
     "kuvaus":"6 x pussi 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Lavazza espresso papu",
     "ean":"8000070018754",
     "kuvaus":"12 x paketti 500 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Lavazza Espresso crema aroma papu",
     "ean":"8000070025400",
     "kuvaus":"6 x pussi 1000 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Pellini TOP espressopapu",
     "ean":"8001685092702",
     "kuvaus":"6 x pussi 1000 g"
   },
   {  
+    "hakusanat": "Kahvi",
     "nimike":"Pellini Espresso Superiore papu",
     "ean":"8001685115401",
     "kuvaus":"6 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Pellini Aroma Oro espressopapu",
     "ean":"8001685121655",
     "kuvaus":"6 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Pellini espressopapu Cremoso",
     "ean":"8001685122416",
     "kuvaus":"6 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Pellini espressopapu vivace",
     "ean":"8001685122423",
     "kuvaus":"6 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Pellini espressopapu Vivace",
     "ean":"8001685123772",
     "kuvaus":"12 x pussi 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Caffe Mauro De Luxe papu",
     "ean":"8002530151124",
     "kuvaus":"6 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Caffé Mauro Special espresso papu",
     "ean":"8002530220714",
     "kuvaus":"10 x pussi 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Saquella espressopapu 100% arabica",
     "ean":"8002650000784",
     "kuvaus":"12 x pussi 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Saquella espressopapu gran gusto",
     "ean":"8002650000791",
     "kuvaus":"12 x pussi 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Saquella espressopapu extra crema",
     "ean":"8002650001224",
     "kuvaus":"8 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Segafredo espresso casa papu",
     "ean":"8003410311089",
     "kuvaus":"8 x pussi 1000 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Segafredo Intermezzo papukahvi",
     "ean":"8003410311140",
     "kuvaus":"6 x pussi 500 g"
   },
-  {  
+  {
+    "hakusanat": "Kahvi",
     "nimike":"Segafredo intermezzo papukahvi",
     "ean":"8003410311171",
     "kuvaus":"8 x pussi 1000 g"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Banaani",
     "ean":"H001",
     "kuvaus":"3000 g"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Omena Jonagold",
     "ean":"H002",
     "kuvaus":"12 kg"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Omena Granny Smith",
     "ean":"H003",
     "kuvaus":"13 kg"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Rypäle tumma",
     "ean":"H004",
     "kuvaus":"4500 g"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Rypäle vihreä",
     "ean":"H005",
     "kuvaus":"4500 g"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Miniporkkana",
     "ean":"H006",
     "kuvaus":"200 g"
   },
   {  
+    "hakusanat": "hedelmä",
     "nimike":"Miniluumutomaatti",
     "ean":"H007",
     "kuvaus":"3000 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Menu riisimuro 5kg",
     "ean":"6410400053263",
     "kuvaus":"1 x laatikko 5000 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Menu maissihiutale 4,5kg",
     "ean":"6410405061508",
     "kuvaus":"1 x laatikko 4500 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Menu hedelmäinen mysli 5kg",
     "ean":"6408641154603",
     "kuvaus":"1 x paketti 5000 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Menu muromysli 7x800g omena-kaneli",
     "ean":"6410400054598",
     "kuvaus":"7 x pussi 800 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Pirkka muromysli 500g marjainen",
     "ean":"6410402015634",
     "kuvaus":"7 x pussi 500 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Pirkka muromysli 750g jogurtti-mansikka",
     "ean":"6410402027385",
     "kuvaus":"7 x pussi 750 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Myllärin tropical mysli 375g gluteeniton",
     "ean":"6415000190103",
     "kuvaus":"6 x pussi 375 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Myllärin mysli 375g fruity luomu",
     "ean":"6415002506865",
     "kuvaus":"8 x pussi 375 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Myllärin Paratiisi mysli 450g",
     "ean":"6415002590048",
     "kuvaus":"8 x pussi 450 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"LU Domino",
     "ean":"6411401085628",
     "kuvaus":"14 x  paketti 175 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"LU Domino suklainen",
     "ean":"7622210262943",
     "kuvaus":"14 x paketti 354 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Kaakaotäytekeksi",
     "ean":"6410405119605",
     "kuvaus":"24 x paketti 350 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Vaniljatäytekeksi",
     "ean":"6410405119629",
     "kuvaus":"24 x paketti 350 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Marabou maitosuklaa cookie",
     "ean":"7622300589882",
     "kuvaus":"10 x paketti 184 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Marabou Daim cookie",
     "ean":"7622300721459",
     "kuvaus":"10 x paketti 184 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Marabou cookies tummasuklaa",
     "ean":"7622210081940",
     "kuvaus":"10 x paketti 184 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Kaurakeksi suklaatäytteellä",
     "ean":"6410405115997",
     "kuvaus":"8 x paketti 600 g"
   },
   {  
+    "hakusanat": "keksi",
     "nimike":"Pikkuleipälajitelma",
     "ean":"6410405096791",
     "kuvaus":"8 x paketti 600 g"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti",
     "nimike":"Valio A+ raparperi",
     "ean":"6408430023523",
     "kuvaus":"20 x purkki 150 g"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti",
     "nimike":"Valio A+ mustikka-vadelma",
     "ean":"6408430023554",
     "kuvaus":"20 x purkki 150 g"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti",
     "nimike":"Valio A+ mansikka",
     "ean":"6408430023578",
     "kuvaus":"20 x purkki 150 g"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti",
     "nimike":"Valio Bulgarianjogurtti",
     "ean":"6408430002801",
     "kuvaus":"10 x purkki 200 g"
   },
   {  
+    "hakusanat": "jogurtti, jugurtti, jukurtti, rahka",
     "nimike":"Ehrmann rahkajogurtti 0,9%",
     "ean":"4002971103007",
     "kuvaus":"12 x purkki 250 g"
   },
   {  
+    "hakusanat": "rahka",
     "nimike":"Ehrmann rasvaton maitorahka",
     "ean":"4002971466102",
     "kuvaus":"12 x purkki 250 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Pirkka eucamenthol ja piparminttu",
     "ean":"6410405102355",
     "kuvaus":"10 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Pirkka ksylitolipurukumi hedelmä",
     "ean":"6410405105134",
     "kuvaus":"10 x pussi 130 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Pirkka ksylitolipurukumi piparminttu",
     "ean":"6410405105141",
     "kuvaus":"10 x pussi 130 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Pirkka ksylitolipurukumi spearmint",
     "ean":"6410405105158",
     "kuvaus":"10 x pussi 130 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Peppermint",
     "ean":"6420256012673",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Spearmint",
     "ean":"6420256012680",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Salmiakki",
     "ean":"6420256012697",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Sweet mint",
     "ean":"6420256012703",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Mint mix",
     "ean":"6420256012710",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Fruit mix",
     "ean":"6420256012727",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Twisted Raspberry-Liquorice",
     "ean":"6420256012734",
     "kuvaus":"16 x pussi 100 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Tasty Cube Polka Mint",
     "ean":"6420256013328",
     "kuvaus":"16 x pussi 70 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Tasty Cube Smooth Salmiac",
     "ean":"6420256013335",
     "kuvaus":"16 x pussi 70 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Sorbet Lemon-lime",
     "ean":"6420256013595",
     "kuvaus":"16 x pussi 70 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Sorbet Raspberry",
     "ean":"6420256013601",
     "kuvaus":"16 x pussi 70 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Long Fresh Eucamenthol",
     "ean":"6420256012819",
     "kuvaus":"25 x pussi 44 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Long Fresh Liquorice",
     "ean":"6420256012826",
     "kuvaus":"25 x pussi 44 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Mynthon Fresh Breath Aqua Menthol",
     "ean":"6420256013083",
     "kuvaus":"25 x pussi 44 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Mynthon Fresh Breath Ice Citrus",
     "ean":"6420256013526",
     "kuvaus":"25 x pussi 44 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Sisu Salmiakki purukumi",
     "ean":"6420256013533",
     "kuvaus":"25 x pussi 44 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Peppermint",
     "ean":"64010847",
     "kuvaus":"25 x pussi 30 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Jenkki Spearmint",
     "ean":"64010854",
     "kuvaus":"25 x pussi 30 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Airwaves Menthol & Eucalyptus",
     "ean":"4009900360685",
     "kuvaus":"22 x pussi 35 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Airwaves Lemon Ice",
     "ean":"4009900365307",
     "kuvaus":"22 x pussi 35 g"
   },
   {  
+    "hakusanat": "purkka, purukumi",
     "nimike":"Airwaves Extreme",
     "ean":"4009900453349",
     "kuvaus":"22 x pussi 29 g"
   },
   {  
+    "hakusanat": "leivälle, liha",
     "nimike":"Meetvursti viipaloitu",
     "ean":"6410405090874",
     "kuvaus":"1 x rasia 1000 g"
   },
   {  
+    "hakusanat": "leivälle, liha",
     "nimike":"Palvikinkku viipaloitu",
     "ean":"6410405090898",
     "kuvaus":"1 x rasia 1500 g"
   },
   {  
+    "hakusanat": "leivälle, liha",
     "nimike":"Ohuen ohut possupaisti viipaloitu",
     "ean":"6410405116130",
     "kuvaus":"1 x rasia 1000 g"
   },
   {  
+    "hakusanat": "leivälle, liha",
     "nimike":"Keittokinkku viipaloitu",
     "ean":"6410405090881",
     "kuvaus":"1 x rasia 1000 g"
   },
   {  
+    "hakusanat": "leivälle, liha",
     "nimike":"Palvikalkkuna viipaloitu",
     "ean":"6410405090904",
     "kuvaus":"1 x rasia 1500 g"
   },
   {  
+    "hakusanat": "leivälle",
     "nimike":"Emmentaljuustoviipale",
     "ean":"6408642369211",
     "kuvaus":"1 x paketti 800 g"
   },
   {  
+    "hakusanat": "leivälle",
     "nimike":"Kermajuustoviipale",
     "ean":"6408642502786",
     "kuvaus":"1 x paketti 1000 g"
   },
   {  
+    "hakusanat": "leivälle",
     "nimike":"Goudajuustoviipale",
     "ean":"6408642503042",
     "kuvaus":"1 x paketti 1000 g"
   },
   {  
+    "hakusanat": "leivälle",
     "nimike":"Ingman meijerivoi",
     "ean":"6408642355368",
     "kuvaus":"1 x paketti 500 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Kingis Original vanilja",
     "ean":"6438200400032",
     "kuvaus":"24 x jätski 55 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Puffet mansikka",
     "ean":"6417901003186",
     "kuvaus":"45 x jätski 62 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Puffet vanilja",
     "ean":"6417901007993",
     "kuvaus":"45 x jätski 62 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Puffet minttu",
     "ean":"6417901008006",
     "kuvaus":"45 x jätski 62 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Puffet päärynä",
     "ean":"6417901008914",
     "kuvaus":"45 x jätski 62 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Hartwall Jaffa limonadijää",
     "ean":"6413300020991",
     "kuvaus":"24 x jätski 70 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Lipsi limonadijää vadelma",
     "ean":"6413300204216",
     "kuvaus":"24 x jätski 70 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Lipsi limonadijää päärynä",
     "ean":"6413300204711",
     "kuvaus":"24 x jätski 70 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Ingman Lipsi limujää cola",
     "ean":"8712100492228",
     "kuvaus":"24 x jätski 70 g"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Tofuline jäädyke vanilja",
     "ean":"7300105007885",
     "kuvaus":"6 x rasia 750 ml"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Tofuline jäätelö suklaa",
     "ean":"7300105007892",
     "kuvaus":"6 x rasia 750 ml"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Tofuline jäädyke mansikka",
     "ean":"7300105007908",
     "kuvaus":"6 x rasia 750 ml"
   },
   {  
+    "hakusanat": "jäätelö",
     "nimike":"Tofuline jäätelö Pearl",
     "ean":"7313112051048",
     "kuvaus":"40 x jätski 55 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Siro erikoishieno sokeri",
     "ean":"6414000020021",
     "kuvaus":"10 x pussi 1000 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Dansukker ruokokidesokeri",
     "ean":"7310340111049",
     "kuvaus":"7 x pussi 500 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Hunaja juokseva",
     "ean":"6410400055557",
     "kuvaus":"8 x purkki 500 g"
   },
   {  
+    "hakusanat": "",
     "nimike":"Wettex Classic talousliina",
     "ean":"7391704810457",
     "kuvaus":"72 kpl"

@@ -1,22 +1,23 @@
-$bg: #eee;
+$bg: #eee9e5;
+$hover: #D5C8BD;
 $text: #444;
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-body { 
-  margin: 0;
+  font-weight: 300;    
   font-family: 'Lato', sans-serif;
   font-size: 0.9em;
-  font-weight: 300;
   color: $text;
+  line-height: 1.2;}
+body { 
+  margin: 0;
+
 }
 
 a {
-  font-size: 16px;
-  font-weight: 400;  
   color: #3190ED;
   text-decoration: none;
+  font-weight: 400;
   &:hover {
     text-decoration: underline;
   }
@@ -32,7 +33,7 @@ a {
 }
 span.icon_clear {
   position: absolute;
-  top: 43px;
+  top: 48px;
   right: 10px;
   display: none;
   cursor: pointer;
@@ -42,7 +43,7 @@ span.icon_clear {
 
 /* hakufilter */
 span.icon_clear:hover {
-  color: #000;
+  color: black;
 }
 
 .urlToBasket {
@@ -95,9 +96,11 @@ b {
 }
 mark {
   color: $text;
+  font-weight: 400;
   background-color: #ffdd33;
 }
 label {
+  margin-top: 5px;
   display: block;
   font-weight: 300;
 }
@@ -109,7 +112,6 @@ input[type="text"] {
   outline: none;
   height: 40px;
   padding: 10px;
-  font-weight: 100;
   font-size: 1em;
   color: #444;
   border: 1px solid #ccc;
@@ -134,12 +136,12 @@ input[type="text"] {
 }
 
 input[type="button"] {
-  display: inline-block;
+  display: block;
   outline: none;
   cursor: pointer;
   height: 3em;
   margin: 5px 0;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1em;
   background-color: #C4E8FF;
   border: 1px solid #8CC2E5;
@@ -165,6 +167,9 @@ input[type="button"] {
 .leftColumn { 
   margin-bottom: .5em; 
 }
+.rightColumn {
+  background: $bg;
+}
 ul {
   padding: 0;
 }
@@ -189,18 +194,16 @@ ul {
   display: table-cell;
   vertical-align: middle;
   width: 60%;
+  padding: .5em;
   min-height: 6em;
 }
 .li-head {
   margin: 0px 0px 10px 0px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
   text-transform: capitalize;
+  font-weight: 400;
 }
 .li-sub {
   margin: 0;
-  font-weight: 300;
 }
 #ostoskoripainike {
   display: block;
@@ -213,12 +216,24 @@ ul {
   text-transform: uppercase;
 }
 .productresult {
+  position: relative;
   cursor: pointer;
   min-height: 18em;
   &:hover {
-    border: 3px solid #ddd;
-    border-radius: 5px;
+    .overlay {
+      border: 10px solid #420;
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      background: $hover;
+      opacity: .1;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
+
 }
 span.reduce img {
   cursor: pointer;
@@ -271,7 +286,7 @@ span.reduce img {
     padding: 0;
   }
   .li-text {
-    padding: 0.5em 0;
+    padding: 0.5em;
   }
   #ostoskoripainike {
     display: none;
@@ -292,8 +307,10 @@ span.reduce img {
   }
   .rightColumn { 
     width: 20em;
-    background: $bg;
     padding-left: 1.5em;
+  }
+  .rightColumn {
+    background: $bg;
   }
   input {
     width: 230px;
