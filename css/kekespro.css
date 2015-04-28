@@ -133,34 +133,36 @@ input {
   width: 200px; }
 
 /* line 122, kekespro.scss */
-input[type="text"] {
+input[type="text"], textarea {
   display: inline-block;
   outline: none;
-  height: 40px;
   padding: 10px;
   font-size: 1em;
   color: #444;
   border: 1px solid #ccc;
-  margin: 5px 0; }
+  margin: 5px 0;
+  width: 230px; }
   /* line 131, kekespro.scss */
-  input[type="text"]::before {
+  input[type="text"]::before, textarea::before {
     content: "x";
     color: red; }
   /* line 135, kekespro.scss */
-  input[type="text"]:focus {
+  input[type="text"]:focus, textarea:focus {
     background-color: #fafcff;
     border: 1px solid #88aaee; }
   /* line 139, kekespro.scss */
-  input[type="text"].invalid + .required {
+  input[type="text"].invalid + .required, textarea.invalid + .required {
     display: inline-block; }
 
 /* line 144, kekespro.scss */
 .required {
   display: none;
   color: red;
-  margin-left: 3px; }
+  margin-left: 3px;
+  vertical-align: top;
+  margin-top: 15px; }
 
-/* line 150, kekespro.scss */
+/* line 152, kekespro.scss */
 input[type="button"] {
   display: block;
   outline: none;
@@ -172,58 +174,58 @@ input[type="button"] {
   background-color: #C4E8FF;
   border: 1px solid #8CC2E5;
   color: #444; }
-  /* line 161, kekespro.scss */
+  /* line 163, kekespro.scss */
   input[type="button"]:hover:not(:disabled) {
     color: #000;
     background-color: #AFE0FF; }
-  /* line 165, kekespro.scss */
+  /* line 167, kekespro.scss */
   input[type="button"]:disabled {
     cursor: default;
     color: #ccc;
     border: 1px solid #ccc;
     background: #eee; }
 
-/* line 172, kekespro.scss */
+/* line 174, kekespro.scss */
 .columnsContainer {
   position: relative;
   margin: 7em .5em .5em .5em; }
 
-/* line 176, kekespro.scss */
+/* line 178, kekespro.scss */
 .leftColumn, .rightColumn {
   padding: .25em; }
 
-/* line 179, kekespro.scss */
+/* line 181, kekespro.scss */
 .leftColumn {
   margin-bottom: .5em; }
 
-/* line 182, kekespro.scss */
+/* line 184, kekespro.scss */
 .rightColumn {
   background: #eee9e5; }
 
-/* line 185, kekespro.scss */
+/* line 187, kekespro.scss */
 ul {
   padding: 0; }
 
-/* line 188, kekespro.scss */
+/* line 190, kekespro.scss */
 .list li {
   border-bottom: 1px solid #ccc;
   display: table;
   border-collapse: collapse;
   width: 100%; }
 
-/* line 194, kekespro.scss */
+/* line 196, kekespro.scss */
 .li-img {
   display: table-cell;
   vertical-align: middle;
   width: 40%; }
-  /* line 198, kekespro.scss */
+  /* line 200, kekespro.scss */
   .li-img img {
     display: block;
     width: 100%;
     height: auto;
     padding: 20px; }
 
-/* line 205, kekespro.scss */
+/* line 207, kekespro.scss */
 .li-text {
   display: table-cell;
   vertical-align: middle;
@@ -231,17 +233,17 @@ ul {
   padding: .5em;
   min-height: 6em; }
 
-/* line 212, kekespro.scss */
+/* line 214, kekespro.scss */
 .li-head {
   margin: 0px 0px 10px 0px;
   text-transform: capitalize;
   font-weight: 400; }
 
-/* line 217, kekespro.scss */
+/* line 219, kekespro.scss */
 .li-sub {
   margin: 0; }
 
-/* line 220, kekespro.scss */
+/* line 222, kekespro.scss */
 #ostoskoripainike {
   display: block;
   position: fixed;
@@ -252,12 +254,12 @@ ul {
   background-color: white;
   text-transform: uppercase; }
 
-/* line 230, kekespro.scss */
+/* line 232, kekespro.scss */
 .productresult {
   position: relative;
   cursor: pointer;
   min-height: 18em; }
-  /* line 235, kekespro.scss */
+  /* line 237, kekespro.scss */
   .productresult:hover .overlay {
     border: 10px solid #420;
     border-radius: 5px;
@@ -270,29 +272,29 @@ ul {
     top: 0;
     left: 0; }
 
-/* line 249, kekespro.scss */
+/* line 251, kekespro.scss */
 .productResultTemplate {
   display: none; }
 
-/* line 253, kekespro.scss */
+/* line 255, kekespro.scss */
 .h1end {
   display: none; }
 
 @media all and (min-width: 40em) {
-  /* line 257, kekespro.scss */
+  /* line 259, kekespro.scss */
   body {
     color: #444;
     font-weight: 200; }
 
-  /* line 261, kekespro.scss */
+  /* line 263, kekespro.scss */
   h1 {
     display: none; }
 
-  /* line 264, kekespro.scss */
+  /* line 266, kekespro.scss */
   header, .leftColumn {
     margin-right: 16em; }
 
-  /* line 267, kekespro.scss */
+  /* line 269, kekespro.scss */
   .rightColumn {
     position: fixed;
     width: 150px;
@@ -304,13 +306,13 @@ ul {
     background: #eee9e5;
     padding-left: 1em; }
 
-  /* line 278, kekespro.scss */
+  /* line 280, kekespro.scss */
   .list {
     padding: 0.5em;
     margin: 0 auto;
     overflow: hidden; }
 
-  /* line 283, kekespro.scss */
+  /* line 285, kekespro.scss */
   .list li {
     padding: 0.5em;
     display: block;
@@ -320,64 +322,64 @@ ul {
     border: 0;
     border: 3px solid white; }
 
-  /* line 292, kekespro.scss */
+  /* line 294, kekespro.scss */
   .li-img, .li-text {
     display: block;
     width: auto;
     padding: 0; }
 
-  /* line 297, kekespro.scss */
+  /* line 299, kekespro.scss */
   .li-text {
     padding: 0.5em; }
 
-  /* line 300, kekespro.scss */
+  /* line 302, kekespro.scss */
   #ostoskoripainike {
     display: none; }
 
-  /* line 303, kekespro.scss */
+  /* line 305, kekespro.scss */
   .h1end {
     display: block; } }
 @media all and (min-width: 50em) {
-  /* line 308, kekespro.scss */
+  /* line 310, kekespro.scss */
   h1 {
     display: inline-block; }
 
-  /* line 311, kekespro.scss */
+  /* line 313, kekespro.scss */
   .list li {
     width: 33%; }
 
-  /* line 314, kekespro.scss */
+  /* line 316, kekespro.scss */
   .leftColumn {
     margin-right: 19.5em; }
 
-  /* line 317, kekespro.scss */
+  /* line 319, kekespro.scss */
   .rightColumn {
     width: 20em;
     padding-left: 1.5em; }
 
-  /* line 321, kekespro.scss */
+  /* line 323, kekespro.scss */
   .rightColumn {
     background: #eee9e5; }
 
-  /* line 324, kekespro.scss */
+  /* line 326, kekespro.scss */
   input {
     width: 230px; } }
 @media all and (min-width: 60em) {
-  /* line 329, kekespro.scss */
+  /* line 331, kekespro.scss */
   .list li {
     width: 20%;
     border: 3px solid white;
     border-radius: 5px; } }
 @media all and (min-width: 100em) {
-  /* line 336, kekespro.scss */
+  /* line 338, kekespro.scss */
   .list li {
     width: 12.5%; }
 
-  /* line 339, kekespro.scss */
+  /* line 341, kekespro.scss */
   .leftColumn {
     margin-right: 22.75em; }
 
-  /* line 342, kekespro.scss */
+  /* line 344, kekespro.scss */
   .rightColumn {
     width: 22em; } }
 

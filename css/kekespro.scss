@@ -119,15 +119,15 @@ label {
 input {
   width: 200px;
 }
-input[type="text"] {
+input[type="text"], textarea {
   display: inline-block;
   outline: none;
-  height: 40px;
   padding: 10px;
   font-size: 1em;
   color: #444;
   border: 1px solid #ccc;
   margin: 5px 0;
+  width: 230px;
   &::before {
     content: "x";
     color: red;
@@ -145,6 +145,8 @@ input[type="text"] {
   display: none;
   color: red;
   margin-left: 3px;
+  vertical-align: top;
+  margin-top: 15px;
 }
 
 input[type="button"] {

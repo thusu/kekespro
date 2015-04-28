@@ -50,14 +50,14 @@
       <div class="rightColumn" id="basket">
         <h2>Ostoskori</h2>
         <a name="ostoskori"></a>
-        <label>Tilaajan nimi</label>
-          <input type="text"  id="name" class="invalid" required/>
-          <div class="required">&#10005;</div>
         <label>Asiakas</label>
           <input type="text" id="client" class="invalid" required />
           <div class="required">&#10005;</div>
         <label>Osoite</label>
           <input type="text" id="address" class="invalid" required />
+          <div class="required">&#10005;</div>
+        <label>Yhteyshenkilöt</label>
+          <textarea type="text"  id="name" class="invalid" rows="3" placeholder="Nimi + puhelinnumero" required></textarea>
           <div class="required">&#10005;</div>
         <input type="button" value="Lähetä tilaus" id="sendorder" disabled/>
         <div class="urlToBasket"></div>
@@ -88,12 +88,9 @@
           <img class="productimage" src="" alt="nimike">
         </div>
         <div class="li-text">
-          <h4 class="li-head nimike" data-value="nimike">
-            nimike
-          </h4>
-          <p class="li-sub kuvaus" data-value="kuvaus">
-            kuvaus
-          </p>
+          <h4 class="li-head nimike" data-value="nimike"></h4>
+          <p class="li-sub kuvaus" data-value="kuvaus"></p>
+          <p class=""hinta></p>
           <input type="hidden" class="ean" value="ean">
         </div>
      </li>

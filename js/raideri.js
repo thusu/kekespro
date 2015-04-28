@@ -18,6 +18,7 @@ $(document).keyup(function(e) {
 $(window).load(function() {
   addItemsFromUrl()
   validateInputFields()
+  updateBasketHtml()
   $("input[id='search']").focus()
 
   function addItemsFromUrl() {
@@ -114,7 +115,7 @@ $(window).load(function() {
     addToBasket(ean)
   })
 
-  $('.rightColumn input[type=text]').each(function() {
+  $('.rightColumn input[type=text], .rightColumn textarea').each(function() {
     $(this).keyup(function() {
       createUrlToBasket()
       validateInputFields()
@@ -122,7 +123,7 @@ $(window).load(function() {
   })
 
   function validateInputFields() {
-    $('.rightColumn input[type=text]').each(function() {
+    $('.rightColumn input[type=text], .rightColumn textarea').each(function() {
       if ($(this).val() == '')
         $(this).addClass('invalid')
       else
@@ -192,13 +193,15 @@ $(window).load(function() {
   }
 
   function updateBasketHtml() {
-    var basketContents = $('#basket #basketcontents')
+    var basketContents = $('#basketcontents')
     basketContents.html('')
     $.each(basket.items, function(index, value) {
       basketContents
         .append("<div class='itemRow'><span class=\"reduce\" data-ean-remove='" + value.ean + "'>" +
         "&#10005;</span><b>" + value.kpl + " kpl " + "</b>" + value.nimike + "<br/>" + value.kuvaus + "</div>")
     })
+    if ($('#basketcontents .itemRow').length == 0)
+      basketContents.html('Ostoskori on tyhjä')
     createUrlToBasket()
   }
 
@@ -230,8 +233,8 @@ $(window).load(function() {
   $('#sendorder').click(function(e) {
     var email = 'kespro.myynti@kesko.fi'
     var cc = 'ostot@reaktor.fi'
-    var subject = 'Tilaus: Reaktor, '+ $('#client').val() +', '+ $('#name').val()
-    var body = 'Hei, tässä tämänkertainen tilaus asiakkuuteen '+ $('#client').val() +' osoitteeseen ' + $('#address').val() + '.\n\n Tilauksen vastaanottamisessa auttavat: \n<INSERT HENKILÖT JA PUHELINNUMEROT HERE>. \n\nTilauksen sisältö: \n\n'
+    var subject = 'Reaktorin tilaus asiakkuutteen '+ $('#client').val()
+    var body = 'Hei, tässä tämänkertainen tilaus asiakkuuteen '+ $('#client').val() +' osoitteeseen ' + $('#address').val() + '.\n\n Tilauksen vastaanottamisessa auttavat: \n'+$('#name').val()+' \n\nTilauksen sisältö: \n\n'
 
     var basketitems = ''
     for (var i = 0; i < basket.items.length; i++) {
