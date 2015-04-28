@@ -61,8 +61,20 @@ span.icon_clear:hover {
   font-weight: 300;
   b {
     display: block;
-    margin-top: 10px;
   }
+  .itemRow {
+    padding: 5px 0;
+    .reduce {
+      cursor: pointer;
+      float: right;
+      padding: 2px 5px;
+      margin: 10px 10px 0 0;
+      border-radius: 15px;
+      &:hover { 
+        background: $hover;
+      }
+    }
+  } 
 }
 header {
   position: fixed;
@@ -233,14 +245,11 @@ ul {
       left: 0;
     }
   }
+}
+.productResultTemplate {
+  display: none;
+}
 
-}
-span.reduce img {
-  cursor: pointer;
-  width: 10px;
-  float: right;
-  margin-right: 20px;
-}
 .h1end {
   display: none;
 }

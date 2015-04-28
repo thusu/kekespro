@@ -41,7 +41,10 @@
     <div class="columnsContainer">
 
       <div class="leftColumn">
-        <div id="results"></div>
+        <div id="results">
+          <ul class="list img-list">
+          </ul>
+        </div>
       </div>
 
       <div class="rightColumn" id="basket">
@@ -77,5 +80,24 @@
       })();
     </script>
     <noscript><p><img src="//piwik.mojova.com/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+
+  <div class="productResultTemplate">
+      <li class="productresult" id="id">
+        <div class="overlay"></div>
+        <div class="li-img">
+          <img class="productimage" src="" alt="nimike">
+        </div>
+        <div class="li-text">
+          <h4 class="li-head nimike" data-value="nimike">
+            nimike
+          </h4>
+          <p class="li-sub kuvaus" data-value="kuvaus">
+            kuvaus
+          </p>
+          <input type="hidden" class="ean" value="ean">
+        </div>
+     </li>
+  </div>
+
   </body>
 </html>
