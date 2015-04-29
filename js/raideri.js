@@ -40,8 +40,8 @@ $(window).load(function() {
           addToBasket(ean)
       }
     })
-    $('#name').val(name)
-    $('#client').val(client)
+    $('#name').val(decodeURIComponent(name))
+    $('#client').val(decodeURIComponent(client))
     $('#address').val(decodeURIComponent(address))
   }
 
@@ -177,13 +177,15 @@ $(window).load(function() {
     var products = productList.find('.productresult')
 
     for(j in basket.items) {
-      var basketItemEan = basket.items[j].ean
+      var basketItem = basket.items[j]
+      var basketItemEan = basketItem.ean
 
       for (i=0; i < products.length; i++) {
         var item = productList.find('.productresult:eq('+i+')')
         var ean = item.attr('id')
         if (ean == basketItemEan) {
           item.addClass('inBasket')
+          item.find('.selected').html(basketItem.kpl)
           break
         }
       }
@@ -203,6 +205,7 @@ $(window).load(function() {
       var productEan = product.attr('id')
       if (ean == productEan) {
         product.removeClass('inBasket')
+        product.find('.selected').html('')
         break
       }
     }
@@ -270,14 +273,16 @@ $(window).load(function() {
       var ean = basket.items[i].ean
       newUrlEnd += "&kpl="+kpl+"&ean="+ean
     }
-    var name = $('#name').val()
-    var client = $('#client').val()
+    var name = encodeURIComponent($('#name').val())
+    var client = encodeURIComponent($('#client').val())
     var address = encodeURIComponent($('#address').val())
     newUrlEnd += "&name="+name+"&client="+client+"&address="+address
 
     var currentUrl = window.location.href.split('?')[0]
     newUrlEnd = newUrlEnd.split(/&(.+)?/)[1] // take out first '&'
     var newUrl = currentUrl + "?" + newUrlEnd
+
+    console.log(newUrlEnd)
 
     $('.urlToBasket').toggle(basket.items.length > 0)
     $('.emptyBasket').toggle(basket.items.length > 0)
