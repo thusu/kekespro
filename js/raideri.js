@@ -109,28 +109,6 @@ $(window).load(function() {
     }
   }
 
-
-  function markBasketItems() {
-    var productList = $('#results .list')
-    var products = productList.find('.productresult')
-
-    for(j in basket.items) {
-      var basketItemEan = basket.items[j].ean
-
-      for (i=0; i < products.length; i++) {
-        var item = productList.find('.productresult:eq('+i+')')
-        var ean = item.attr('id')
-        if (ean == basketItemEan) {
-          item.addClass('inBasket')
-          break
-        }
-      }
-    }
-  }
-
-
-
-
   $('.icon_clear').click(function() {
     $(this).delay(300).fadeTo(300, 0)
       .prev('input').val('')
@@ -194,6 +172,64 @@ $(window).load(function() {
     })
   }
 
+  function markBasketItems() {
+    var productList = $('#results .list')
+    var products = productList.find('.productresult')
+
+    for(j in basket.items) {
+      var basketItemEan = basket.items[j].ean
+
+      for (i=0; i < products.length; i++) {
+        var item = productList.find('.productresult:eq('+i+')')
+        var ean = item.attr('id')
+        if (ean == basketItemEan) {
+          item.addClass('inBasket')
+          break
+        }
+      }
+    }
+  }
+
+  $('#basket').on('click', '.reduce', function() {
+    var ean = $(this).attr("data-ean-remove")
+    removeFromBasket(ean)
+  })
+
+  function unmarkItem(ean) {
+    var productList = $('#results .list')
+    var products = productList.find('.productresult')
+    for (i = 0; i < products.length; i++) {
+      var product = productList.find('.productresult:eq(' + i + ')')
+      var productEan = product.attr('id')
+      if (ean == productEan) {
+        product.removeClass('inBasket')
+        break
+      }
+    }
+  }
+
+  function removeFromBasket(ean) {
+    for (var i = 0; i < basket.items.length; i++) {
+      if (basket.items[i].ean == ean) {
+        if (basket.items[i].kpl == 1) {
+          basket.items.splice(i, 1)
+          unmarkItem(ean)
+        } else {
+          basket.items[i].kpl--
+          reduced = true
+        }
+      }
+    }
+    $('.urlToBasket').toggle(basket.items.length > 0)
+    updateBasketHtml()
+  }
+
+  function emptyBasket() {
+    var basketSize = basket.items.length
+    basket.items.splice(0, basketSize)
+    updateBasketHtml()
+  }
+
   function countTotalPrice() {
     var totalPrice = 0
     for (i in basket.items) {
@@ -209,39 +245,10 @@ $(window).load(function() {
     return niceNumber
   }
 
-  $('#basket').on('click', '.reduce', function() {
-    var ean = $(this).attr("data-ean-remove")
-    removeFromBasket(ean)
-  })
-
-  function removeFromBasket(ean) {
-    for (var i = 0; i < basket.items.length; i++) {
-      if (basket.items[i].ean == ean) {
-        if (basket.items[i].kpl == 1) {
-          basket.items.splice(i, 1)
-        } else {
-          basket.items[i].kpl--
-          reduced = true
-        }
-      }
-    }
-    $('.urlToBasket').toggle(basket.items.length > 0)
-    updateBasketHtml()
-  }
-
-
-  function emptyBasket() {
-    var basketSize = basket.items.length
-    basket.items.splice(0, basketSize)
-    updateBasketHtml()
-  }
-
   function updateBasketHtml() {
     var basketContents = $('#basketcontents')
     basketContents.html('')
-
     var item = $('#basketItemTemplate')
-
     $.each(basket.items, function(index, value) {
       item.find('.reduce').attr('data-ean-remove', value.ean)
       item.find('.amount').html(value.kpl + ' kpl')
@@ -249,7 +256,6 @@ $(window).load(function() {
       item.find('.description').html(value.kuvaus)
       basketContents.append(item.html())
     })
-
     basketContents.append("<p class='totalPrice'>Yhteensä: "+ countTotalPrice() +"</p>")
     if ($('#basketcontents .itemRow').length == 0)
       basketContents.html('Ostoskori on tyhjä')
