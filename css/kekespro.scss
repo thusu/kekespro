@@ -1,0 +1,393 @@
+$bg: #eee9e5;
+$hover: #D5C8BD;
+$text: #444;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  font-weight: 300;    
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  color: $text;
+  line-height: 1.2;}
+body { 
+  margin: 0;
+
+}
+a {
+  color: #3190ED;
+  text-decoration: none;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+#ex1 {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: #fff;
+  padding: 5px;
+}
+#ex1 p {
+  color: #000;
+}
+span.icon_clear {
+  position: absolute;
+  top: 48px;
+  right: 10px;
+  display: none;
+  cursor: pointer;
+  font: 1em sans-serif;
+  color: #ccc;
+}
+/* hakufilter */
+span.icon_clear:hover {
+  color: black;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.95;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2em;
+  a {
+    color: inherit;
+    text-transform: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+}
+h1 {
+  padding: 30px;
+  display: none;
+}
+h2 {
+  padding: 30px 0px 30px 0px;
+  display: inline-block;
+}
+b {
+  font-weight: 600;
+}
+mark {
+  color: $text;
+  font-weight: 400;
+  background-color: #ffdd33;
+}
+label {
+  margin-top: 5px;
+  display: block;
+  font-weight: 300;
+}
+input {
+  width: 200px;
+}
+input[type="text"], textarea {
+  display: inline-block;
+  outline: none;
+  padding: 10px;
+  font-size: 1em;
+  color: #444;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  width: 230px;
+  &::before {
+    content: "x";
+    color: red;
+  }
+  &:focus {
+    background-color: #fafcff;
+    border: 1px solid #88aaee;
+  }
+  &.invalid + .required {
+    display: inline-block;
+  }
+}
+
+.required {
+  display: none;
+  color: red;
+  margin-left: 3px;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+input[type="button"] {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  height: 3em;
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 1em;
+  background-color: #C4E8FF;
+  border: 1px solid #8CC2E5;
+  color: #444;
+  &:hover:not(:disabled) {
+    color: #000;
+    background-color: #AFE0FF;
+  }
+  &:disabled {
+    cursor: default;
+    color: #ccc;
+    border: 1px solid #ccc;
+    background: #eee;
+  }
+}
+.columnsContainer { 
+  position: relative; 
+  margin: 7em .5em .5em .5em; 
+}
+.leftColumn, .rightColumn {  
+  padding: .25em; 
+}
+.leftColumn { 
+  margin-bottom: .5em; 
+}
+.rightColumn {
+  background: $bg;
+  clear: both;
+  z-index: 10;
+}
+ul {
+  padding: 0;
+  .productresult {
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    min-height: 18em;
+    &.inBasket {
+      background: #fed;
+    }
+    &:hover {
+      .overlay {
+        border: 10px solid #420;
+        border-radius: 5px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        background: $hover;
+        opacity: .1;
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+      }
+    }
+    .selected {
+      display: none;
+      border: 10px solid #420;
+      border-radius: 5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      background: $hover;
+      opacity: .1;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+    }
+    .hinta {
+      font-weight: 600;
+      margin-top: 7px;
+      min-height: 1.2em;
+    }
+    .li-img {
+      vertical-align: middle;
+      img {
+        display: block;
+        width: 100%; 
+        height: auto;
+        padding: 20px;
+      }
+    }
+    .li-text {
+      vertical-align: middle;
+      min-height: 6em;
+    }
+    .li-head {
+      margin: 0px 0px 10px 0px;
+      text-transform: capitalize;
+      font-weight: 400;
+      min-height: 2.4em;
+    }
+    .li-sub {
+      margin: 0;
+    }
+  }
+}
+
+#ostoskoripainike {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1;
+  background-color: white;
+  text-transform: uppercase;
+}
+.urlToBasket {
+  float: left;
+  margin: 10px 0
+}
+.emptyBasket {
+  float: right;
+  margin: 10px;
+  display: none;
+}
+#basketcontents {
+  clear: both;
+  line-height: 1.35em;
+  font-weight: 300;
+  b {
+    display: block;
+  }
+  .itemRow {
+    padding: 5px 0;
+    .reduce {
+      cursor: pointer;
+      float: right;
+      padding: 4px 7px;
+      margin-right: 3px;
+      border-radius: 15px;
+      &:hover { 
+        background: #ccc;
+      }
+    }
+    .amount {
+      display: block;
+      font-weight: 600;
+    }
+    .productName {
+      display: block;
+      padding: 3px 0;
+    }
+    .description {
+      display: block;
+      font-size: 14px;
+    }
+  }
+  .totalPrice {
+    font-weight: 600;
+    margin: 10px 10px 10px 0;
+    text-align: right;
+    padding: 5px 0;
+    border-top: 1px solid black;
+  } 
+}
+
+#productResultTemplate, #basketItemTemplate {
+  display: none;
+}
+
+.h1end {
+  display: none;
+}
+
+
+
+@media all and (min-width: 35em) {
+  body {
+    color: $text;
+    font-weight: 200;
+  }
+  h1 {
+    display: none;	
+  }
+  header, .leftColumn { 
+    margin-right: 16em; 
+  }
+  .rightColumn { 
+    position: fixed;
+    width: 150px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+    width: 17em; 
+    background: $bg;
+    padding-left: 1em;
+  }	
+  .list {
+    padding: 0.5em;
+    margin: 0 auto;
+    overflow: hidden;
+    li {
+      padding: 0.5em;
+      display: block;
+      width: 50%;
+      float: left;
+      background: none;
+      border: 0;
+      .li-head {
+        min-height: initial;
+      }
+      .li-img, .li-text {
+        display: block;
+        width: auto;
+        padding: 0;
+      }
+    }
+  }
+  #ostoskoripainike {
+    display: none;
+  }
+  .h1end {
+    display: block;
+  } 
+}
+@media all and (min-width: 50em) {
+  h1 {
+    display: inline-block;	
+  }
+  .list li {
+    width: 33%;
+  }
+  .leftColumn { 
+    margin-right: 19.5em; 
+  }
+  .rightColumn { 
+    width: 20em;
+    padding-left: 1.5em;
+  }
+  .rightColumn {
+    background: $bg;
+  }
+  input {
+    width: 230px;
+  }
+}
+@media all and (min-width: 60em) {
+  .list li {
+    width: 25%;
+  }
+}
+@media all and (min-width: 70em) {
+  .list li {
+    width: 20%;
+  }
+}
+@media all and (min-width: 90em) {
+  .list li {
+    width: 16.66%;
+  }
+}@media all and (min-width: 100em) {
+  .list li {
+    width: 12.5%;
+  }
+  .leftColumn { 
+    margin-right: 22.75em; 
+  }
+  .rightColumn { 
+    width: 22em; 
+  }
+}
+
