@@ -13,7 +13,6 @@ body {
   margin: 0;
 
 }
-
 a {
   color: #3190ED;
   text-decoration: none;
@@ -40,41 +39,9 @@ span.icon_clear {
   font: 1em sans-serif;
   color: #ccc;
 }
-
 /* hakufilter */
 span.icon_clear:hover {
   color: black;
-}
-
-.urlToBasket {
-  float: left;
-  margin: 10px 0
-}
-.emptyBasket {
-  float: right;
-  margin: 10px;
-  display: none;
-}
-#basketcontents {
-  clear: both;
-  line-height: 1.35em;
-  font-weight: 300;
-  b {
-    display: block;
-  }
-  .itemRow {
-    padding: 5px 0;
-    .reduce {
-      cursor: pointer;
-      float: right;
-      padding: 2px 5px;
-      margin: 10px 10px 0 0;
-      border-radius: 15px;
-      &:hover { 
-        background: $hover;
-      }
-    }
-  } 
 }
 header {
   position: fixed;
@@ -82,7 +49,10 @@ header {
   left: 0;
   background-color: white;
   z-index: 1;
-  opacity: 0.99;
+  width: 100%;
+  opacity: 0.95;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
 }
 h1, h2 {
   text-transform: uppercase;
@@ -183,42 +153,77 @@ input[type="button"] {
 }
 .rightColumn {
   background: $bg;
+  clear: both;
+  z-index: 10;
 }
 ul {
   padding: 0;
-}
-.list li {
-  border-bottom: 1px solid #ccc;
-  display: table;
-  border-collapse: collapse;
-  width: 100%;
-}
-.li-img {
-  display: table-cell;
-  vertical-align: middle;
-  width: 40%;
- img {
-    display: block;
-    width: 100%; 
-    height: auto;
-    padding: 20px;
+  .productresult {
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    min-height: 18em;
+    &.inBasket {
+      background: #fed;
+    }
+    &:hover {
+      .overlay {
+        border: 10px solid #420;
+        border-radius: 5px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        background: $hover;
+        opacity: .1;
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+      }
+    }
+    .selected {
+      display: none;
+      border: 10px solid #420;
+      border-radius: 5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      background: $hover;
+      opacity: .1;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+    }
+    .hinta {
+      font-weight: 600;
+      margin-top: 7px;
+      min-height: 1.2em;
+    }
+    .li-img {
+      vertical-align: middle;
+      img {
+        display: block;
+        width: 100%; 
+        height: auto;
+        padding: 20px;
+      }
+    }
+    .li-text {
+      vertical-align: middle;
+      min-height: 6em;
+    }
+    .li-head {
+      margin: 0px 0px 10px 0px;
+      text-transform: capitalize;
+      font-weight: 400;
+      min-height: 2.4em;
+    }
+    .li-sub {
+      margin: 0;
+    }
   }
 }
-.li-text {
-  display: table-cell;
-  vertical-align: middle;
-  width: 60%;
-  padding: .5em;
-  min-height: 6em;
-}
-.li-head {
-  margin: 0px 0px 10px 0px;
-  text-transform: capitalize;
-  font-weight: 400;
-}
-.li-sub {
-  margin: 0;
-}
+
 #ostoskoripainike {
   display: block;
   position: fixed;
@@ -229,33 +234,67 @@ ul {
   background-color: white;
   text-transform: uppercase;
 }
-.productresult {
-  position: relative;
-  cursor: pointer;
-  min-height: 18em;
-  &:hover {
-    .overlay {
-      border: 10px solid #420;
-      border-radius: 5px;
-      width: 100%;
-      height: 100%;
-      background: $hover;
-      opacity: .1;
+.urlToBasket {
+  float: left;
+  margin: 10px 0
+}
+.emptyBasket {
+  float: right;
+  margin: 10px;
+  display: none;
+}
+#basketcontents {
+  clear: both;
+  line-height: 1.35em;
+  font-weight: 300;
+  b {
+    display: block;
+  }
+  .itemRow {
+    padding: 5px 0;
+    .reduce {
+      cursor: pointer;
+      float: right;
+      padding: 4px 7px;
+      margin-right: 3px;
+      border-radius: 15px;
+      &:hover { 
+        background: #ccc;
+      }
+    }
+    .amount {
       display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
+      font-weight: 600;
+    }
+    .productName {
+      display: block;
+      padding: 3px 0;
+    }
+    .description {
+      display: block;
+      font-size: 14px;
     }
   }
+  .totalPrice {
+    font-weight: 600;
+    margin: 10px 10px 10px 0;
+    text-align: right;
+    padding: 5px 0;
+    border-top: 1px solid black;
+  } 
 }
-.productResultTemplate {
+
+#productResultTemplate, #basketItemTemplate {
   display: none;
 }
 
 .h1end {
   display: none;
 }
-@media all and (min-width: 40em) {
+
+
+
+@media all and (min-width: 35em) {
   body {
     color: $text;
     font-weight: 200;
@@ -281,23 +320,22 @@ ul {
     padding: 0.5em;
     margin: 0 auto;
     overflow: hidden;
-  }
-  .list li {
-    padding: 0.5em;
-    display: block;
-    width: 50%;
-    float: left;
-    background: none;
-    border: 0;
-    border: 3px solid white;
-  }
-  .li-img, .li-text {
-    display: block;
-    width: auto;
-    padding: 0;
-  }
-  .li-text {
-    padding: 0.5em;
+    li {
+      padding: 0.5em;
+      display: block;
+      width: 50%;
+      float: left;
+      background: none;
+      border: 0;
+      .li-head {
+        min-height: initial;
+      }
+      .li-img, .li-text {
+        display: block;
+        width: auto;
+        padding: 0;
+      }
+    }
   }
   #ostoskoripainike {
     display: none;
@@ -329,12 +367,19 @@ ul {
 }
 @media all and (min-width: 60em) {
   .list li {
-    width: 20%;
-    border: 3px solid white;
-    border-radius: 5px;
+    width: 25%;
   }
 }
-@media all and (min-width: 100em) {
+@media all and (min-width: 70em) {
+  .list li {
+    width: 20%;
+  }
+}
+@media all and (min-width: 90em) {
+  .list li {
+    width: 16.66%;
+  }
+}@media all and (min-width: 100em) {
   .list li {
     width: 12.5%;
   }

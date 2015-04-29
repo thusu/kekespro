@@ -81,19 +81,29 @@
     </script>
     <noscript><p><img src="//piwik.mojova.com/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 
-  <div class="productResultTemplate">
-      <li class="productresult" id="id">
-        <div class="overlay"></div>
-        <div class="li-img">
-          <img class="productimage" src="" alt="nimike">
-        </div>
-        <div class="li-text">
-          <h4 class="li-head nimike" data-value="nimike"></h4>
-          <p class="li-sub kuvaus" data-value="kuvaus"></p>
-          <p class=""hinta></p>
-          <input type="hidden" class="ean" value="ean">
-        </div>
-     </li>
+  <div id="productResultTemplate">
+    <li class="productresult" id="id">
+      <div class="overlay"></div>
+      <div class="selected"></div>
+      <div class="li-img">
+        <img class="productimage" src="" alt="nimike">
+      </div>
+      <div class="li-text">
+        <h4 class="li-head nimike" data-value="nimike"></h4>
+        <p class="li-sub kuvaus" data-value="kuvaus"></p>
+        <p class="hinta"></p>
+        <input type="hidden" class="ean" value="ean">
+      </div>
+   </li>
+  </div>
+
+  <div id="basketItemTemplate">
+    <div class="itemRow">
+      <span class="reduce" data-ean-remove="">✕</span>
+      <span class="amount"></span>
+      <span class="productName"></span>
+      <span class="description"></span>
+    </div>
   </div>
 
   </body>

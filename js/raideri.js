@@ -2,6 +2,10 @@ var basket = {
   items: []
 }
 
+var productCatalog = {
+  items: []
+}
+
 $(document).keyup(function(e) {
   var esc = 27
   if (e.keyCode == esc) {
@@ -68,7 +72,7 @@ $(window).load(function() {
   function listSearchResults(searchTerm, data) {
     var regex = new RegExp(searchTerm, "i")
     var productCount = 0
-    var result = $('.productResultTemplate')
+    var result = $('#productResultTemplate')
     var resultsList =  $('#results ul')
     resultsList.html('')
     $.each(data, function(key, val) {
@@ -85,6 +89,8 @@ $(window).load(function() {
         result.find('.kuvaus')
           .attr('data-value', val.kuvaus)
           .html(val.kuvaus.replace(pattern, "<mark>$1</mark>"))
+        result.find('.hinta')
+          .html(val.hinta)
         result.find('img')
           .prop('src', "./img/"+val.ean+".jpg")
           .prop('alt', val.nimike)
@@ -102,6 +108,28 @@ $(window).load(function() {
       resultsList.append(result.html())
     }
   }
+
+
+  function markBasketItems() {
+    var productList = $('#results .list')
+    var products = productList.find('.productresult')
+
+    for(j in basket.items) {
+      var basketItemEan = basket.items[j].ean
+
+      for (i=0; i < products.length; i++) {
+        var item = productList.find('.productresult:eq('+i+')')
+        var ean = item.attr('id')
+        if (ean == basketItemEan) {
+          item.addClass('inBasket')
+          break
+        }
+      }
+    }
+  }
+
+
+
 
   $('.icon_clear').click(function() {
     $(this).delay(300).fadeTo(300, 0)
@@ -147,7 +175,8 @@ $(window).load(function() {
             nimike: val.nimike,
             ean: val.ean,
             kuvaus: val.kuvaus,
-            kpl: 1
+            kpl: 1,
+            hinta: val.hinta
           }
           var increased = false
           for (var i = 0; i < basket.items.length; i++) {
@@ -163,6 +192,21 @@ $(window).load(function() {
       })
       updateBasketHtml()
     })
+  }
+
+  function countTotalPrice() {
+    var totalPrice = 0
+    for (i in basket.items) {
+      var item = basket.items[i]
+      if (item.hinta != '')
+        var price = item.hinta
+      else price = '0'
+      var numberPrice = parseFloat(price.replace(',','.'))
+      var amount = basket.items[i].kpl
+      totalPrice += parseFloat(numberPrice * amount)
+    }
+    var niceNumber = totalPrice.toFixed(2).replace('.',',').concat(' €')
+    return niceNumber
   }
 
   $('#basket').on('click', '.reduce', function() {
@@ -195,14 +239,22 @@ $(window).load(function() {
   function updateBasketHtml() {
     var basketContents = $('#basketcontents')
     basketContents.html('')
+
+    var item = $('#basketItemTemplate')
+
     $.each(basket.items, function(index, value) {
-      basketContents
-        .append("<div class='itemRow'><span class=\"reduce\" data-ean-remove='" + value.ean + "'>" +
-        "&#10005;</span><b>" + value.kpl + " kpl " + "</b>" + value.nimike + "<br/>" + value.kuvaus + "</div>")
+      item.find('.reduce').attr('data-ean-remove', value.ean)
+      item.find('.amount').html(value.kpl + ' kpl')
+      item.find('.productName').html(value.nimike)
+      item.find('.description').html(value.kuvaus)
+      basketContents.append(item.html())
     })
+
+    basketContents.append("<p class='totalPrice'>Yhteensä: "+ countTotalPrice() +"</p>")
     if ($('#basketcontents .itemRow').length == 0)
       basketContents.html('Ostoskori on tyhjä')
     createUrlToBasket()
+    markBasketItems()
   }
 
   function createUrlToBasket() {
